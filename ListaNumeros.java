@@ -1,4 +1,4 @@
-//3. Para a lista encadeada da questão anterior, mostre o somatório dos números maiores e menores do que 10
+//4. Para a lista da questão anterior, conte quantos números são pares
 class ListaNumeros {
     private Node cabeca;
     private Node cauda;
@@ -43,5 +43,19 @@ class ListaNumeros {
 
         System.out.println("Soma dos maiores que 10: " + somaMaiores);
         System.out.println("Soma dos menores ou iguais a 10: " + somaMenoresOuIguais);
+    }
+
+    public int contarPares() {
+        int contador = 0;
+        Node atual = cabeca;
+
+        while (atual != null) {
+            if (atual.numero % 2 == 0) {
+                contador++;
+            }
+            atual = atual.seguinte;
+        }
+
+        return contador;
     }
 }

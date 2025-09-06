@@ -1,4 +1,4 @@
-//3. Para a lista encadeada da questão anterior, mostre o somatório dos números maiores e menores do que 10
+//4. Para a lista da questão anterior, conte quantos números são pares
 class Node {
     int numero;     
     Node seguinte;    
